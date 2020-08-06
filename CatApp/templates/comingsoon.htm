@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Document</title>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+
+
+
+</head>
+
+
+
+
+
+<!-- begin snippet: js hide: false console: true babel: null -->
+
+<!-- language: lang-js -->
+<script type="text/javascript">
+$({ Counter: 0 }).animate({
+    Counter: $('.Single').text()
+  }, {
+    duration: 1000,
+    easing: 'swing',
+    step: function() {
+      $('.Single').text(Math.ceil(this.Counter));
+    }
+  });
+
+    
+</script>
+<!-- language: lang-html -->
+
+  
+  <span class="Single">150</span>
+
+<!-- end snippet -->
+
+
+
+<body>
+    
+</body>
+</html>

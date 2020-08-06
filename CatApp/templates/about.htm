@@ -1,0 +1,454 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home/About</title>
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.13.0/css/all.css" integrity="sha384-Bfad6CLCknfcloXFOyFnlgtENryhrpZCe29RTifKEixXQZ38WheV+i/6YWSzkz3V" crossorigin="anonymous">
+<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+</head>
+<style>
+    body{
+        font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        font-size: 20px;
+    }
+.images{
+background-image: url("static/images/greencat.jpg");
+background-size: 100%;
+height: 800px;
+position: center center;
+background-repeat: no-repeat;
+transition:all 0.5s;
+background-attachment: fixed;
+
+}
+nav{
+align-items: center;
+
+}
+.item{
+    margin-left:35%;
+    padding-top: 10px;
+    
+}
+
+
+.item li{
+    list-style: none;
+    display: inline;
+    border-right-color: blanchedalmond;
+    border-right-style: solid;
+    border-color: white;
+    margin-right: 10px;
+    
+    
+
+}
+.item a{
+    color: blanchedalmond;
+    margin-right: 20px;
+    font-size: 20px;
+    font-family: 'Courier New', Courier, monospace;
+    text-decoration: none;
+}
+.item .li .active{
+    color: green;
+
+
+}
+.item a :visited{
+    color: #749b19;
+
+}
+.team{
+    margin-left: 20%;
+    margin-right:0%;
+    border: none;
+    font-family:'Courier New', Courier, monospace;
+    overflow: auto;
+
+}
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 10px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+.dropdown-content a {
+  float: none;
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+  font-size: 15px;
+}
+
+/* Add a grey background color to dropdown links on hover */
+.dropdown-content a:hover {
+  background-color: #ddd;
+}
+
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.text{
+    color: honeydew;
+    margin-top: 100px;
+}
+.row{
+    margin-top: 200px;
+    text-align: center;
+}
+.acc{
+    text-align: center;
+}
+.foot li a{
+    color: white;
+}
+.social a{
+    color: white;
+
+}
+footer{
+    background-color:#009966;
+}
+.social li{
+    list-style-type:none;
+    display: inline;
+    
+}
+/* side nav */
+.sidenav {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color:#D8D8D8;
+  overflow-x: hidden;
+  transition: 0.5s;
+  text-align:center;
+}
+
+.sidenav a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #818181;
+  display: block;
+  transition: 0.3s;
+
+}
+
+.sidenav a:hover{
+  color: black;
+}
+
+.sidenav .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+}
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  max-width: 300px;
+  margin: auto;
+  text-align: center;
+  font-family: arial;
+}
+
+.title {
+  color: grey;
+  font-size: 18px;
+}
+
+.card button {
+  border: none;
+  outline: 0;
+  display: inline-block;
+  padding: 8px;
+  color: white;
+  background-color: #098f14;
+  text-align: center;
+  cursor: pointer;
+  width: 100%;
+  font-size: 18px;
+}
+
+.card a {
+  text-decoration: none;
+  font-size: 22px;
+  color: #3b942491;
+ display: inline;
+}
+
+button:hover, a:hover {
+  opacity: 0.7;
+}
+.rotateimg180 {
+  -webkit-transform:rotate(180deg);
+  -moz-transform: rotate(180deg);
+  -ms-transform: rotate(180deg);
+  -o-transform: rotate(180deg);
+  transform: rotate(180deg);
+}
+
+</style>
+
+
+<body  style="background-color:#F0F0F0;">
+    
+   <div class="images">
+   <nav>
+       <div class="logo"><span style="font-size: 70px; color: white;"><a href="/" style="color: white;"><i class="fas fa-paw"></i></a></span></div>
+       <div class="item">
+   <li><a href="/" >HOME</a></li>
+   <li class="active"><a href="/about" style="color: green;">ABOUT US</a></li>
+   <div class="dropdown">
+   <li class="" style="overflow: hidden;"><a href="#">BREED<i class="fa fa-caret-down"></i></a>
+    <div class="dropdown-content">
+      <a href="#">Siamese cat</a>
+      <a href="#">Persian Cat</a>
+      <a href="#">Manx Cat</a>
+    </div>
+  
+  </li>
+  </div>
+   <li><a href="/blog">BLOG</a></li>
+   <li><a href="/news">NEWS</a></li>
+   <!--  menu bar -->
+   <li class="team" style="border: none;">
+    our Team
+    <span style="font-size:25px;cursor:pointer" onclick="openNav()"><i style="color: #f9f9f9 ;" class="fas fa-users"></i></span></li>
+       </div>
+
+
+
+   </nav>
+    <div class="text container " style="text-align: center;">
+   <div class="headtext">
+      <h3>ABOUT <span style="color: darkgreen;">US</span></h3>
+   </div>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis ipsa sapiente aperiam deserunt voluptates dolores sequi dicta nemo soluta incidunt. Quis, molestias minima optio at harum nobis officiis omnis dicta!</p>
+
+   </div>
+  
+   </div>
+<!-- about us -->
+  <div class="container"> 
+      <div class="row">
+        <div class="col-md-6">
+            <h4>Who Are We ?</h4>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam vitae maxime ratione ipsa, neque libero. Voluptatum aspernatur quaerat veritatis dolorem, tenetur dignissimos itaque facere accusamus consectetur eveniet, illo, deleniti qui.</p>
+        </div>
+        <div class="col-md-6">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae ut dolor minus nisi, nobis quos expedita voluptates, ad itaque animi magnam dolorum veritatis, fugit pariatur quidem veniam consectetur voluptate quaerat!
+        </div>
+      </div>
+
+
+
+  </div>
+  <!-- our mission -->
+  <div class="container"> 
+    <div class="row" style="height: 400px;">
+      <div class="col-md-6">
+          <h4>Our mission</h4>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam vitae maxime ratione ipsa, neque libero. Voluptatum aspernatur quaerat veritatis dolorem, tenetur dignissimos itaque facere accusamus consectetur eveniet, illo, deleniti qui.</p>
+      </div>
+      <div class="col-md-6">
+          <img  style="border: 5px solid silver;" src="static/images/whitecat.jpg" height="400px" alt=""data-aos="fade-up">
+      </div>
+    </div>
+
+
+
+</div>
+<hr>
+<!-- accomplishment -->
+<div class=" acc container">
+ <h4>our accomplishment</h4>
+<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque harum magnam mollitia, optio nulla dolore dolorem nam necessitatibus porro quo! Obcaecati recusandae rerum impedit voluptatum ex ut dolor enim quibusdam!</p>
+
+<hr class="container">
+
+
+</div>
+
+<!-- our people -->
+<div id="mySidenav" class="sidenav">
+    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+    <h3 style="color:black; padding-top: 50px;">Our Team</h3>
+
+<div class="row" style="padding-top: 0%;margin-top: 30px;">
+ <div class="col-md-4">
+    <div class="card">
+        <img src="static/images/blackcat.jpg" alt="John" height="200px" width="auto" >
+        <h1>John Doe</h1>
+        <p class="title">CEO & Founder, Example</p>
+        <p>Harvard University</p>
+        <div style="margin: 24px 0;">
+          <a href="#"><i class="fab fa-dribbble"></i></a> 
+          <a href="#"><i class="fab fa-twitter"></i></a>  
+          <a href="#"><i class="fab fa-linkedin"></i></a>  
+          <a href="#"><i class="fab fa-facebook"></i></a> 
+      
+        </div>
+        <p><button>Contact</button></p>
+      </div>
+ </div>
+
+ <div class="col-md-4">
+    <div class="card">
+        <img src="static/images/blackcat.jpg" alt="John" height="200px" width="auto" >
+        <h1>John Doe</h1>
+        <p class="title">CEO & Founder, Example</p>
+        <p>Harvard University</p>
+        <div style="margin: 24px 0;">
+          <a href="#"><i class="fab fa-dribbble"></i></a> 
+          <a href="#"><i class="fab fa-twitter"></i></a>  
+          <a href="#"><i class="fab fa-linkedin"></i></a>  
+          <a href="#"><i class="fab fa-facebook"></i></a> 
+          
+        </div>
+        <p><button>Contact</button></p>
+      </div>
+ </div>
+
+ <div class="col-md-4">
+    <div class="card">
+        <img src="static/images/blackcat.jpg" alt="John" height="200px" width="auto" >
+        <h1>John Doe</h1>
+        <p class="title">CEO & Founder, Example</p>
+        <p>Harvard University</p>
+        <div style="margin: 24px 0;">
+          <a href="#"><i class="fab fa-dribbble"></i></a> 
+          <a href="#"><i class="fab fa-twitter"></i></a>  
+          <a href="#"><i class="fab fa-linkedin"></i></a>  
+          <a href="#"><i class="fab fa-facebook"></i></a> 
+          
+        </div>
+        <p><button>Contact</button></p>
+      </div>
+ </div>
+
+<hr>
+
+<div class=" footer-2 container">
+    <div id="footer-2" style=" text-align: center;color: black; margin-top: 30px;">
+    <p>Copyright&copy;2020 |All rights reserved by joyce</p>
+    </div>
+    </div>
+</div>
+
+  </div>
+<script>
+    function openNav() {
+      document.getElementById("mySidenav").style.width = "100%";
+
+    }
+    
+    function closeNav() {
+      document.getElementById("mySidenav").style.width = "0";
+    }
+    </script>
+
+
+
+<!-- footer -->
+<footer>
+    <div class="container">
+
+        <div id="newsletter">
+          <p style="color: white;">Subscribe to our newsletter</p>
+          <form action="">
+          <input type="text" placeholder="Email"> 
+           <button class="btn submit" style="background-color: #009966 ;color: white; border-width: 1px;border-color: white;">Send</button>
+          </form>
+        </div>
+        
+        
+        <div class="foot">
+        <div class=" link col-sm-3" style="color: darkgrey; float: left; list-style: none;">
+        
+        <h5 style="color:white ;">USEFULL LINKS</h5>
+        <li><a href="/about">About us</a></li>
+        <li><a href="/news">News</a></li>
+        <li><a href="/blog">Blog</a></li>
+        <li><a href="#contact">Contacts</a></li>
+        
+        
+        </div>
+        
+        <div class="col-sm-3" style="color: white;float: left; list-style: none;" >
+        <h5 style="color: white ;">WHERE TO FIND US</h5>
+        <li>Nairobi</li>
+        <li>Mombasa</li>
+        <li>Kisumu</li>
+        </div>
+        
+        <div class="social col-sm-4" style=" float: left; color:white;list-style: none; ">
+        <h5>SUPPORT US</h5>
+        <li><a href=""><i class="fab fa-facebook-f"></i></a></li>
+        <li><a href=""><i class="fab fa-twitter"></i></a></li>
+        <li><a href=""><i class="fab fa-instagram"></i></a></li>
+        <li><a href=""><i class="fab fa-youtube"></i></a></li>
+        <br>
+        
+        <h5>Others</h5>
+        <p>Terms and condition <br>Privacy And Policy</p>
+        
+        
+        
+        </div>
+        
+        <div class="col-sm-2 inline" style=" float: left; color: white;list-style: none;">
+          <div class="logo"><span style="font-size: 70px; color: white;"><a href="/" style="color: white;"><i class="fas fa-paw"></i></a></span></div>
+          </div>
+          
+          
+        </div>
+        
+        </div>
+        
+        <div class="line container" >
+        <hr style="background-color:  green ;clear: left;">
+        </div>
+        <div class=" footer-2 container">
+        <div id="footer-2" style=" text-align: center;color: honeydew;">
+        <p>Copyright&copy;2020 |All rights reserved by joyce</p>
+        </div>
+        </div>
+
+
+</footer>
+  <!-- script -->
+
+<script>
+  AOS.init();
+</script>
+
+
+   
+</body>
+</html>
+

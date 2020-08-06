@@ -1,0 +1,154 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title></title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<!-- <link href="static/css/style.css" rel="stylesheet"> -->
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.13.0/css/all.css" integrity="sha384-Bfad6CLCknfcloXFOyFnlgtENryhrpZCe29RTifKEixXQZ38WheV+i/6YWSzkz3V" crossorigin="anonymous">
+
+<style>
+
+.images{
+background-image: url("static/images/backimg.png") ;
+width:100%;
+min-height:600px;
+background-size: cover;
+position: relative ;
+background-repeat: no-repeat;
+
+}
+.images::before{
+content: '';
+position: absolute;
+top: 0;
+right: 0;
+bottom: 0;
+left: 0;
+background-image: linear-gradient(to bottom right,#002f4b, #dc4225);
+opacity: .6;
+}
+
+@media only screen and (max-width: 600px) {
+  .images { background-image: url("static/images/backimg.png") ;
+   height: 600px;
+
+
+  }
+  
+.images::before{
+content: '';
+position: absolute;
+top: 0;
+right: 0;
+bottom: 0;
+left: 0;
+background-image: linear-gradient(to bottom right,#002f4b, #dc4225);
+opacity: .6;
+}
+
+
+}
+
+.text{
+padding-top: 10px;
+color: white;
+font-family: 'Courier New', Courier, monospace;
+font-size: 50px;
+position: relative;
+text-align: center;
+animation:slide_up 1.5s ease;
+}
+
+button{
+border-radius: 60px;
+background-color:rebeccapurple;
+border: none;
+position: relative;
+margin-top: 100px;
+padding: 20px;
+width: 200px;
+transition: all 0.5s;
+cursor: pointer;
+animation: slide_up 1.1s ease;
+}
+
+
+.button a {
+cursor: pointer;
+display: inline-block;
+position: relative;
+transition: 0.5s;
+color: #FFFFFF;
+}
+
+.button :active:after {
+content: '\00bb';
+position: absolute;
+opacity: 0;
+top: 0;
+right: -20px;
+transition: 0.5s;
+}
+
+
+.button:hover a {
+padding-right: 25px;
+opacity: 0.6;
+text-underline-offset: 0;
+}
+
+.button:hover a:after {
+opacity: 1;
+right: 0;
+}
+.button:active {
+background-color: #3e8e41;
+box-shadow: 0 5px #666;
+transform: translateY(4px);
+}
+.footer{
+text-align: center;
+color: white;
+font-size: 20px;
+font-family: 'Courier New', Courier, monospace;
+margin-top: 150px ;
+
+}
+@keyframes slide_up {
+  0%{
+    transform:translateY(1000px);
+  }
+  100%{
+    transform: translateY(0px);
+  }
+  
+}
+
+</style>
+</head>
+<body>
+
+<div class="images">
+
+<div class="logo"><span style="font-size: 100px; color: #FFFFFF;"><a href="/" style="color: white;"><i class="fas fa-paw"></i></a></span></div>
+
+<div class="text">
+I Do Care Do U?
+</div>
+<div class="container" style="text-align: center;">
+<button class="button" ><a href="/home">Get Started</a></button>
+</div>
+
+<footer>
+<div class="footer">
+&copy All rights reserved by joyce
+</div>
+</footer>
+
+</div>
+
+</body>
+</html>

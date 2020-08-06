@@ -1,0 +1,1152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title></title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.13.0/css/all.css" integrity="sha384-Bfad6CLCknfcloXFOyFnlgtENryhrpZCe29RTifKEixXQZ38WheV+i/6YWSzkz3V" crossorigin="anonymous">
+<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+<script src="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+
+
+
+</head>
+<style>
+@import url(https://www.googleapis.com/webfonts/v1/webfonts?key=AIzaSyDYpcgpjZNyEo149VqP6szI1IimoRm9SBo);
+html , body{
+background-size: 100%;   
+padding: 0%;
+height: 100%;
+
+
+}
+
+.img{
+background-image: url("static/images/My.png");
+height: 700px;
+background-position: relative center center;
+background-repeat: no-repeat;
+background-size: cover;
+/* background-attachment: fixed; */
+}
+
+nav{
+padding-top: 10px;
+height: 100px;
+/* background-image: url("static/images/rg.jpg"); */
+
+
+}
+
+.logo{
+float: left;
+margin-right: 20%;
+color: white;
+font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+
+}
+.item{
+float: left;
+padding-top:10px ;
+
+}
+
+.item li {
+list-style: none;
+display: inline;
+margin-right: 20px;
+padding: 2px;
+
+}
+.item li a :hover{
+text-align: center;
+
+
+
+}
+.item li a{
+color:orange;
+font-size: 15px;
+font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+
+}
+
+
+
+.search{
+margin-left: 75%;
+font-size: 16px;
+
+}
+.search input{
+width: 130px;
+box-sizing: border-box;
+border: 2px solid #ccc;
+border-radius: 19px;
+font-size: 16px;
+background-color: white;
+background-position: 2px 2px; 
+background-repeat: no-repeat;
+padding: 12px 20px 12px 40px;
+-webkit-transition: width 0.4s ease-in-out;
+transition: width 0.4s ease-in-out;
+
+}
+
+.search input[type=search]:focus {
+width: 100%;
+}
+.dropdown {
+position: relative;
+display: inline-block;
+}
+.dropdown-content {
+display: none;
+position: absolute;
+background-color: #f9f9f9;
+min-width: 160px;
+box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+z-index: 1;
+}
+.dropdown-content a {
+float: none;
+color: black;
+padding: 12px 16px;
+text-decoration: none;
+display: block;
+text-align: left;
+font-size: 15px;
+}
+
+/* Add a grey background color to dropdown links on hover */
+.dropdown-content a:hover {
+background-color: #ddd;
+}
+
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content {
+display: block;
+}
+
+
+
+
+
+#head-text {
+clear: left;
+margin-left:40%;
+margin-top: 100px;
+margin-bottom: 200px;
+
+}
+
+.button {
+
+border: none;
+text-align: center;
+align-content: center;
+padding: 15px;
+background-color: black ;
+border: solid 2px;
+border-color: darkgoldenrod;
+border-radius: 60px;
+clear: left;
+
+
+}
+.button a{
+
+font-size: 20px;
+font-family: cursive;
+}
+
+
+.btn{
+text-align: center;
+padding-top: 400px;
+margin-left: 10%;
+
+}
+
+.content{
+margin-top: 10px;
+height: 200px;
+}
+/* .row{
+height: 400px;
+} */
+.column{
+width: 50%;
+float: left;
+}
+.split {
+height: 400px;
+width: 50%;
+position: relative;
+z-index: 1;
+top: 0;
+overflow-x: hidden;
+padding-top: 20px;
+
+}
+
+/* Control the left side */
+.left {
+left: 0;
+
+float: left;
+}
+
+/* Control the right side */
+.right {
+right: 0;
+
+
+}
+
+/* If you want the content centered horizontally and vertically */
+.centered {
+position: absolute;
+top: 50%;
+left: 50%;
+transform: translate(-50%, -50%);
+text-align: center;
+}
+
+
+/* Style the image inside the centered container, if needed */
+
+.zoom {
+
+
+transition: transform .1s; /* Animation */
+
+}
+
+.zoom:hover {
+transform: scale(1.2); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
+}
+.service{
+  margin-bottom: 100px;
+}
+
+
+.table-ex{
+  margin-top: 100px;
+  background-color: #14213D;
+  color: white;
+}
+table{
+  padding-top: 50px;
+}
+table, th, td {
+  border: 1px solid black;
+  border-collapse: collapse;
+}
+th{
+  color: rgb(229, 63, 63);
+}
+th, td {
+  padding: 15px;
+  text-align: left;
+}
+tr:nth-child(even){
+  background-color: #10192e;
+}
+tr:nth-child(odd){
+  background-color: #0f1c3a;
+}
+
+.load-more{
+  border-radius:16px;
+  width:100px;
+  /* padding: 10px; */
+}
+
+.counter{
+  
+  text-align: center;
+  background-color: #FCA311;
+}
+
+.counter.row{
+padding-top: 200px;
+
+}
+.counter-count{
+  font-size: 20px;
+}
+
+#header-text{
+  text-align: center;
+  margin-bottom: 100px;
+
+}
+.col-lg-4{
+  text-align: center;
+}
+.col-lg-4:hover{
+  background-color: #FCA311;
+  color: #F0F0F0;
+}
+
+.adoption{
+
+  background-color: #14213D;
+  color: #ddd;
+  height: 400px;
+}
+.cards img{
+  padding-top: 10px;
+  align-items: center;
+}
+
+.adpt-head{
+text-align: center;
+
+}
+
+
+/* .adoption{
+  
+ 
+} */
+
+@keyframes float {
+  50% {
+     transform: translate(0, 40px);
+  }
+}
+
+
+.cats{
+  animation: float 5s ease-out infinite;;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+input[type=text], select, textarea {
+width: 100%;
+padding: 12px;
+border: 1px solid #ccc;
+border-radius: 4px;
+resize: vertical;
+}
+
+label {
+padding: 12px 12px 12px 0;
+display: inline-block;
+}
+
+input[type=submit] {
+background-color:darkgoldenrod;
+color: white;
+padding: 12px 20px;
+border: none;
+border-radius: 4px;
+cursor: pointer;
+float: right;
+}
+
+input[type=submit]:hover {
+background-color:rgb(149, 109, 8);
+}
+
+
+.col-25 {
+float: left;
+width: 25%;
+margin-top: 6px;
+}
+
+.col-75 {
+float: left;
+width: 75%;
+margin-top: 6px;
+}
+
+
+.row:after {
+content: "";
+display: table;
+clear: both;
+}
+
+
+@media screen and (max-width: 600px) {
+.col-25, .col-75, input[type=submit] {
+width: 100%;
+margin-top: 0;
+}
+}
+
+
+
+
+
+iframe{
+height: 300px;
+width: 100%;
+
+
+}
+#newsletter{
+padding-top: 30px;
+color: #cca300;
+}
+#newsletter button{
+background-color: black;
+color: #cca300;
+background-size: 10px;
+border-radius: 5px;
+border-style: solid;
+border-color:#cca300;
+border-width: 1px;
+padding: 2px 2px 2px 2px;
+
+}
+.foot{
+padding-top: 10px;
+margin-bottom: 100px;
+
+}
+
+.line {
+padding-top: 100px;
+}
+.link li a{
+list-style: none;
+color: #ccc;
+}
+.social li {
+display: inline;
+
+}
+.social a{
+margin: 2px;
+color: #ccc;
+}
+footer{
+background-color:#000000;
+margin-bottom: 0px;
+color: #ccc;
+}
+@keyframes slide_up {
+0%{
+transform:translateY(250px);
+}
+100%{
+transform: translateY(0px);
+}
+
+}
+
+</style>
+
+
+<body  >
+<div class="continer-full">
+<div class="img">
+
+<!-- nav bar -->
+<nav >
+<div  class="logo">
+<span style="font-size:100px;"> <a href="/" style="color: #cca300;"><i class="fas fa-paw"></i></a></span>
+</div>
+
+<div class="item">
+<ul>
+<li class="active"><a href="#">HOME</a></li>
+<li><a href="/about">ABOUT</a></li>
+<div class="dropdown">
+<li class="" style="overflow: hidden;"><a href="#">BREED<i class="fa fa-caret-down"></i></a>
+<div class="dropdown-content">
+<a href="#">Siamese cat</a>
+<a href="#">Persian Cat</a>
+<a href="#">Manx Cat</a>  
+</div>
+</li>
+</div>
+<li><a href="/blog">BLOG</a></li>
+<li><a href="/news">NEWS</a></li>
+<li><a href="#contact">CONTACTS</a></li>
+</ul>
+</div>
+<div class="search">
+<input type="search" name="search" placeholder="Search.." >
+
+</div>
+
+</nav>
+<!-- main text -->
+
+
+
+
+<div class="btn container ">
+<button class="button " style="background-color: #cca300; color: black; border-color: black; margin-right:70px;"><a href="" style="color: black;">learn more</a></button>
+<button class="button"><a href="" style="color: #cca300;">load more</a></button>
+
+</div>
+
+
+
+
+
+</div>
+<div class="container" style="background-color:#F0F0F0; margin-bottom: 200px;">
+<div class="row" style="height: auto; padding-top: 100px; padding-bottom: 20px;">
+<div class="col-md-4" style="text-align: center;">
+<h4><i class="fas fa-paw"></i></h4>
+<p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quod, vel architecto laborum voluptate aspernatur ipsum inventore voluptates cupiditate, soluta non dolores reiciendis, ex deserunt quaerat esse beatae officia fuga blanditiis.</p>
+</div>
+
+<div class="col-md-4" style="text-align: center;">
+
+
+<h4><i class="far fa-heart"></i></h4>
+<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum perferendis commodi beatae asperiores optio, ipsum aut cumque tenetur exercitationem pariatur non autem sunt harum quis odit est illo ex minima.</p>
+</div>
+<div class="col-md-4 " style=" text-align: center;">
+<h4><i class="fas fa-cat"></i></h4>
+<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi ipsum id sed hic velit beatae adipisci architecto animi, iure repellat optio necessitatibus perspiciatis impedit illo quaerat harum. Voluptate, voluptatum explicabo?</p>
+</div>
+</div>
+</div>
+
+
+
+<!-- boxes -->
+
+
+<div class="container">
+<div class="split left zoom" data-aos="fade-right">
+<div class="centered">
+<img src="static/images/browncat.jpg" height="400px">
+
+</div>
+</div>
+
+<div class="split right">
+<div class="centered">
+<h3>About cats</h3>
+<p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Autem error ea modi voluptas commodi consectetur exercitationem fugiat cum cupiditate possimus. Nobis culpa dolor aliquid consequatur sapiente fugiat at veritatis ullam.</p>
+</div>
+</div>
+</div>
+<br>
+<div class="container">
+<div class="split left">
+<div class="centered">
+<h3>Are They Mysterious????</h3>
+<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloremque placeat officia natus tempora, illum repudiandae laborum ad blanditiis corporis porro vitae, recusandae in sint culpa quae fugit corrupti error accusantium.</p>
+</div>
+</div>
+
+<div class="split right zoom" data-aos="fade-left">
+<div class="centered">
+<img src="static/images/greycat.jpg" height="400px">
+</div>
+</div>
+</div>
+
+
+</div>
+<!-- <hr> -->
+<hr>
+
+
+<!-- card info -->
+
+  <div class=" services container">
+    <div id="header-text">
+      <h2>What we do</h2>
+      </div>
+
+<div class="row">
+
+  <div class="col-lg-4" >
+    <div class="cards">
+      <img src="static/images/jae.jpg" alt="" height="200px">
+      <div class="card-body">
+        <h4 class="card-title">Rescue</h4>
+        <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe quaerat commodi beatae voluptate velit nam iste, nobis animi incidunt iure totam voluptates illum reprehenderit dicta quae natus! Eos, nesciunt praesentium?</p>
+      </div>
+    </div>
+  </div>
+
+
+  <div class="col-lg-4">
+    <div class="cards">
+      <img src="static/images/jeanie.jpg" alt="" height="200px">
+      <div class="card-body">
+        <h4 class="card-title">Adopt</h4>
+        <p class="card-text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Exercitationem aliquam nihil animi harum eaque ullam nesciunt natus qui placeat quos officiis corporis facilis quasi veritatis molestiae, quam adipisci dolorem minima.</p>
+      </div>
+    </div>
+  </div>
+   
+
+
+
+  <div class="col-lg-4">
+  
+    <div class="cards">
+      <img src="static/images/lucky.jpg" alt="" height="200px">
+      <div class="card-body">
+        <h4 class="card-title">Treat</h4>
+        <p class="card-text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Odio eligendi quod nam laborum, temporibus sit, est architecto dolor ratione provident, modi voluptate quia molestias hic vel error iure. Ut, voluptatibus.</p>
+      </div>
+    </div>
+
+
+  </div>
+
+</div>
+
+
+
+    </div>
+
+    
+
+
+    <div class=" services container">
+     
+  
+  <div class="row">
+  
+    <div class="col-lg-4" >
+      <div class="cards">
+        <img src="static/images/nirzar.jpg" alt="" height="200px">
+        <div class="card-body">
+          <h4 class="card-title">Feed</h4>
+          <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe quaerat commodi beatae voluptate velit nam iste, nobis animi incidunt iure totam voluptates illum reprehenderit dicta quae natus! Eos, nesciunt praesentium?</p>
+        </div>
+      </div>
+    </div>
+  
+  
+    <div class="col-lg-4">
+      <div class="cards">
+        <img src="static/images/raul.jpg" alt="" height="200px">
+        <div class="card-body">
+          <h4 class="card-title">Train</h4>
+          <p class="card-text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Exercitationem aliquam nihil animi harum eaque ullam nesciunt natus qui placeat quos officiis corporis facilis quasi veritatis molestiae, quam adipisci dolorem minima.</p>
+        </div>
+      </div>
+    </div>
+     
+  
+  
+  
+    <div class="col-lg-4">
+    
+      <div class="cards">
+        <img src="static/images/qijin.jpg" alt="" height="200px">
+        <div class="card-body">
+          <h4 class="card-title">Groom</h4>
+          <p class="card-text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Odio eligendi quod nam laborum, temporibus sit, est architecto dolor ratione provident, modi voluptate quia molestias hic vel error iure. Ut, voluptatibus.</p>
+        </div>
+      </div>
+  
+  
+    </div>
+  
+  </div>
+  
+  
+  
+      </div>
+<!-- table -->
+
+
+<div class="table-ex">
+<div class="container" style="padding-top: 50px; padding-bottom: 100px;">
+
+<table >
+        <tr>
+          <th>Breed</th>
+          <th>Location</th>
+          <th>Origin</th>
+          <th>Body type</th>
+          <th>Coat length</th>
+          <th>Pattern</th>
+          <th>kittens</th>
+          
+        </tr>
+        <tr>
+          <td>Abyssinian</td>
+          <td>Asia[5][a]</td>
+          <td>Natural</td>
+          <td>Semi-foreign</td>
+          <td>Short</td>
+          <td>Ticked tabby</td>
+          <td>2</td>
+          
+        </tr>
+        <tr>
+          <td>Aegean</td>
+          <td>Greece</td>
+          <td>Natural</td>
+          <td>Moderate</td>
+          <td>Short to Semi-long</td>
+          <td>Multi-color</td>
+          <td>4</td>
+        
+        </tr>
+        <tr>
+          <td>American Bobtail</td>
+          <td>United States[5]</td>
+          <td>Mutation</td>
+          <td>Cobby</td>
+          <td>Short/long</td>
+          <td>All</td>
+          <td>7</td>
+          
+        </tr>
+        <tr>
+          <td>American Curl</td>
+          <td>United States[5]</td>
+          <td>Mutation</td>
+          <td>Semi-foreign</td>
+          <td>Short/long</td>
+          <td>All</td>
+          <td>8</td>
+         
+        </tr>
+        <tr>
+          <td>American Ringtail</td>
+          <td>United States[5]</td>
+          <td>Mutation</td>
+          <td>Foreign</td>
+          <td>Short/long</td>
+          <td>All</td>
+          <td>9</td>
+          
+        </tr>
+        <tr>
+          <td>American Shorthair</td>
+          <td>United States[5]</td>
+          <td>Natural</td>
+          <td>Cobby</td>
+          <td>Short</td>
+          <td>All</td>
+          <td>4</td>
+          
+        </tr>
+        <tr>
+          <td>American Wirehair</td>
+          <td>United States[5]</td>
+          <td>Mutation</td>
+          <td>Normal</td>
+          <td>Rex</td>
+          <td>All</td>
+          <td>2</td>
+          
+        </tr>
+        <tr>
+          <td>Aphrodite Giant</td>
+          <td>Cyprus</td>
+          <td>Natural</td>
+          <td>Lean and muscular</td>
+          <td>All</td>
+          <td>All</td>
+          <td>6</td>
+         
+        </tr>
+        <tr>
+          <td>Arabian Mau</td>
+          <td>Arabian Peninsula</td>
+          <td>Natural</td>
+          <td>Moderate and muscular</td>
+          <td>Short</td>
+          <td>All</td>
+          <td>5</td>
+         
+        </tr>
+        <tr>
+          <td>Asian cat</td>
+          <td>Developed in the United KingdomFoundation stock from Asia</td>
+          <td>Natural</td>
+          <td>Moderate</td>
+          <td>Short</td>
+          <td>Evenly solid</td>
+          <td>5</td>
+          
+        </tr>
+        <tr>
+          <td>Asian Semi-longhair</td>
+          <td>United Kingdom</td>
+          <td>Crossbreed between the Burmese and long-haired cats</td>
+          <td>Cobby</td>
+          <td>Semi-long</td>
+          <td>Evenly solid</td>
+          <td>4</td>
+          
+        </tr>
+        <tr>
+          <td>Australian Mist</td>
+          <td>Australia</td>
+          <td>Crossbreed between the Abyssinian and Burmese</td>
+          <td>Moderate</td>
+          <td>Short</td>
+          <td>Spotted or marbled</td>
+          <td>7</td>
+          
+        </tr>
+        <tr>
+          <td>Balinese</td>
+          <td>Developed in the United States[5]Foundation stock from Thailand</td>
+          <td>Mutation of the Siamese</td>
+          <td>Semi-foreign</td>
+          <td>Long</td>
+          <td>Colorpoint</td>
+          <td>8</td>
+          
+        </tr>
+        <tr>
+          <td>Bambino</td>
+          <td>United States</td>
+          <td>Crossbreed between the Munchkin and Sphynx</td>
+          <td>Dwarf</td>
+          <td>Hairless and downy</td>
+          <td>All</td>
+          <td>1</td>
+          
+        </tr>
+        <tr>
+          <td>Bengal</td>
+          <td>Developed in the United States, but created in Asia</td>
+          <td>Hybrid of the Abyssinian and Egyptian Mau × leopard cat (Prionailurus bengalensis)</td>
+          <td>Large</td>
+          <td>Short</td>
+          <td>Spotted, marbled, or rosetted</td>
+          <td>2</td>
+       
+        </tr>
+        <tr>
+          <td>Birman</td>
+          <td>Developed in FranceFoundation stock from Burma (Myanmar)[5]</td>
+          <td>The original Birman was crossed with the Siamese and the Persian to create the Birman of today.</td>
+          <td>Cobby</td>
+          <td>Semi-long</td>
+          <td>Mitted colorpoint</td>
+          <td>0</td>
+        </tr>
+        <tr>
+          <td>Bombay</td>
+          <td>United States and Burma (Myanmar)</td>
+          <td>Crossbreed between the Black American Shorthair and Sable Burmese</td>
+          <td>Cobby</td>
+          <td>Short</td>
+          <td>Solid black</td>
+          <td>3</td>
+        </tr>
+      </table>
+      <div class="load container" style="text-align: center; margin-top: 60px;">
+      <p>To view the whole database please sign In/ Sign Up</p>
+<button class="load-more">
+   Sign Up
+</button>
+</div>
+</div>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  <!-- counter -->
+  
+</div>
+
+<div class="counter">
+  <div class="container">
+      <div class="row" style="padding-top: 100px; padding-bottom: 50px;">
+          <div class="col-12 col-lg-3">
+              <div class="count-up">
+                  <p class="counter-count">10000</p>
+                  <h3>cats rescued</h3>
+              </div>
+          </div>
+    
+          <div class="col-12 col-lg-3">
+            <div class="count-up">
+                <p class="counter-count">2548</p>
+                <h3>cats adopted</h3>
+            </div>
+        </div>
+
+        <div class="col-12 col-lg-3">
+          <div class="count-up">
+              <p class="counter-count">600</p>
+              <h3>special needs cat</h3>
+          </div>
+      </div>
+           
+      <div class="col-12 col-lg-3">
+        <div class="count-up">
+            <p class="counter-count">400</p>
+            <h3>kittens</h3>
+        </div>
+      </div>
+
+        </div>
+
+  
+        </div>
+
+</div>
+   
+  
+<!-- adoption info -->
+<div class= "adoption container-full">
+  <div class="adpt-head">
+      <h4>Adoption information</h4>
+      <br>
+      <br>
+  </div>
+  <div class="row  " style="text-align: center; margin-left:10px;" >
+  <div class="col-75">
+ <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores neque dolor inventore commodi libero magnam nisi sapiente alias harum fugiat fuga obcaecati voluptatum placeat voluptatem, rem beatae nobis quidem. Eaque?Lorem ipsum, dolor sit amet consectetur adipisicing elit. Doloribus cum vel, labore error, iusto mollitia temporibus minus maiores, harum natus molestiae soluta esse! Dicta pariatur atque accusantium qui laudantium nemo?Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore corrupti natus fuga quis nam repellendus cumque? Corrupti vel culpa repellat ad eveniet beatae, aspernatur deserunt, dolorem ipsa itaque eaque? Voluptatibus!
+ 
+ </p>
+</div>
+
+
+<div class="col-25">
+  <div class="cats">
+  <img src="static/images/cats.png" alt="" height="250px">
+  </div>
+</div>
+
+
+
+
+
+</div>
+
+</div>
+
+
+<br>
+
+
+<!-- learning center -->
+
+
+
+
+<!-- contact section -->
+<div class="container" style="height: 300px;" id="contact">
+<div style="text-align: center;">
+<h5>Contact Us</h5>
+
+
+</div>
+
+
+
+<div class="row">
+
+
+  <div class="col-sm-4 text-align:center;">
+  
+  <p>
+  <i class="fa fa-map-marker" style="width:30px"></i> Nairobi, kenya<br>
+  </p>
+  
+  <p>
+  <i class="fa fa-phone" style="width:30px"></i> Phone:+254 7690800<br>
+  </p>
+  <p>    
+  <i class="fa fa-envelope" style="width:30px"> </i> Email: joycemuchema036@gmail.com<br>
+  </p>
+  
+  </div>
+  <div class="col-lg-6">
+  
+  
+  
+  
+  <form action="/action_page.php">
+
+  <div class="row">
+  <div class="col-25">
+  <label for="fname">First Name :</label>
+  </div>
+  <div class="col-75">
+  <input type="text" id="fname" name="firstname" placeholder="Your name..">
+  </div>
+  </div>
+  <div class="row">
+  <div class="col-25">
+  <label for="lname">Last Name :</label>
+  </div>
+  <div class="col-75">
+  <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+  </div>
+  </div>
+  <div class="row">
+  <div class="col-25">
+  <label for="country">Country :</label>
+  </div>
+  <div class="col-75">
+  <select id="country" name="country">
+  <option value="australia">kenya</option>
+  <option value="canada">Uganda</option>
+  <option value="usa">Tanzania</option>
+  </select>
+  </div>
+  </div>
+  <div class="row">
+  <div class="col-25">
+  <label for="subject">Subject :</label>
+  </div>
+  <div class="col-75">
+  <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
+  </div>
+  </div>
+  <div class="row">
+  <input type="submit" value="Submit">
+  </div>
+  </form>
+  </div>
+  
+  
+  </div>
+  
+  
+
+</div>
+<!-- <hr> -->
+<!-- location -->
+<div class="container" style="clear: left; margin-top: 400px;">
+<div style="text-align: center;margin-bottom: 2px; ">
+<h5>Our Location</h5>
+
+</div>
+
+<iframe src="https://www.google.com/maps/embed?pb=!1m16!1m12!1m3!1d8645.40390779589!2d36.803771132652834!3d-1.2833079128269993!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!2m1!1sstatehouse!5e0!3m2!1sen!2ske!4v1591380617485!5m2!1sen!2ske"  height="600" frameborder="0" style="border:0;"  aria-hidden="false" tabindex="0" height="100px"></iframe>
+
+</div>
+
+
+
+<!-- footer -->
+<footer >
+<div class="container">
+
+<div id="newsletter">
+<p>Subscribe to our newsletter</p>
+<form action="">
+<input type="email" placeholder="Email"> 
+<button class="button submit">Send</button>
+</form>
+</div>
+
+
+<div class="foot">
+<div class=" link col-sm-3" style="color: darkgrey; float: left; list-style: none;">
+
+<h5 style="color:darkgoldenrod ;">USEFULL LINKS</h5>
+<li><a href="/about">About us</a></li>
+<li><a href="/news">News</a></li>
+<li><a href="/blog">Blog</a></li>
+<li><a href="#contact">Contacts</a></li>
+
+
+</div>
+
+<div class="col-sm-3" style="color: darkgrey;float: left; list-style: none;" >
+<h5 style="color: darkgoldenrod ;">WHERE TO FIND US</h5>
+<li>Nairobi</li>
+<li>Mombasa</li>
+<li>Kisumu</li>
+</div>
+
+<div class="social col-sm-4" style=" float: left; color: darkgoldenrod;list-style: none; ">
+<h5>SUPPORT US</h5>
+<li><a href=""><i class="fab fa-facebook-f"></i></a></li>
+<li><a href=""><i class="fab fa-twitter"></i></a></li>
+<li><a href=""><i class="fab fa-instagram"></i></a></li>
+<li><a href=""><i class="fab fa-youtube"></i></a></li>
+<br>
+
+<h5>Others</h5>
+<p>Terms and condition <br>Privacy And Policy</p>
+
+
+
+</div>
+
+<div class="col-sm-2 inline" style=" float: left; color: darkgoldenrod;list-style: none;">
+<span style="font-size:100px;"> <a href="/" style="color: #cca300;"><i class="fas fa-paw"></i></a></span>
+
+</div>
+
+
+</div>
+
+</div>
+
+<div class="line container" >
+<hr style="background-color:  darkgoldenrod ;clear: left;">
+</div>
+<div class=" footer-2 container">
+<div id="footer-2" style=" text-align: center;">
+<p>Copyright&copy;2020 |All rights reserved by joyce</p>
+</div>
+</div>
+</footer>
+<!-- script files -->
+
+
+
+<script>
+AOS.init();
+
+
+
+
+</script>
+
+
+
+</body>
+</html>
